@@ -71,6 +71,7 @@ public class WeatherActivity extends AppCompatActivity {
         swipeRefresh = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh);
         swipeRefresh.setColorSchemeColors(0x88000000);
 //        swipeRefresh.setProgressBackgroundColorSchemeColor(0x88000000);
+        swipeRefresh.setProgressViewEndTarget(true, 300); //设置刷新出现的位置，true=缩放
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navButton = (Button) findViewById(R.id.nav_button);
         navButton.setOnClickListener(new View.OnClickListener() {
